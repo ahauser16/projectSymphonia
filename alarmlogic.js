@@ -152,12 +152,19 @@ geo1();
 			$("#weatherDisplay").append(image);
 			
 			$(".WeatherResult").text(response.weather[0].id)
+
+			const correctSong = document.getElementById("rainySong");
+			
+			// Audio.addEventListener("play",myScript);
+			// myScript(){
+			correctSong.play();
+			console.log("correctSong " +correctSong);
+			
 		});
 			//this is where the audio API
 			//https://developers.soundcloud.com/docs#search
 			//work on naming conventions, indentation, cleaner...
 	
-			function playSong(){
 			// var OneWordClimate.inner
 			// var weatherID =$(".WeatherResult").val()    
 			// console.log(weatherID)
@@ -167,8 +174,7 @@ geo1();
 			//   console.log(RainySound)
 
 			// var OneWordClimate;
-			var correctSong = document.getElementById("rainySong"); 
-			correctSong.play();
+	
 			// How do I make the song an object to i can play it with .play()
 				// if (OneWordClimate >200 || OneWordClimate <300 ) {
 			// 	//  block of code to be executed if the condition is true
@@ -183,7 +189,7 @@ geo1();
 			// else if ((OneWordClimate > 600 || OneWordClimate < 700)) {
 			// 	//  block of code to be executed if the condition is false
 			// }
-		}
+		
 		// else if ((OneWordClimate > 600 || OneWordClimate < 700)) {
 		// 	//  block of code to be executed if the condition is false
 		// }

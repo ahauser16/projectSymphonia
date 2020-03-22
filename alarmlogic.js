@@ -151,13 +151,20 @@ geo1();
 			});
 			$("#weatherDisplay").append(image);
 			
+			
+
 			$(".WeatherResult").text(response.weather[0].id)
+
+			/* Here we can call when the alarm goes on*/
+			
+			var correctSong = document.getElementById("abc"); 
+			correctSong.play();
 		});
 			//this is where the audio API
 			//https://developers.soundcloud.com/docs#search
 			//work on naming conventions, indentation, cleaner...
 	
-			function playSong(){
+		/* 	function playSong(){
 			// var OneWordClimate.inner
 			// var weatherID =$(".WeatherResult").val()    
 			// console.log(weatherID)
@@ -167,7 +174,7 @@ geo1();
 			//   console.log(RainySound)
 
 			// var OneWordClimate;
-			var correctSong = document.getElementById("rainySong"); 
+			var correctSong = document.getElementById("xyz"); 
 			correctSong.play();
 			// How do I make the song an object to i can play it with .play()
 				// if (OneWordClimate >200 || OneWordClimate <300 ) {
@@ -188,7 +195,5 @@ geo1();
 		// 	//  block of code to be executed if the condition is false
 		// }
 			// else{
-			// }
+			// } */
 	}
-	
-	

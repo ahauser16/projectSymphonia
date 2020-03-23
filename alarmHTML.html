@@ -22,16 +22,24 @@
     <div class="row header_wrapper">
         <!-- empty -->
         <div class="col-3"></div>
+
         <div class="City col-5">
             Siberia
+
+        <div class="City col-6">
+            Madrid
+
         </div> 
         <div class="latitude">61.01371</div>
         <div class="longitude">99.196656</div>
         <div class="WeatherResult"></div>
     </div>
     <!-- Clock Section -->
+    <div class="container">
     <div class="row Clock">
+        <div class="col-md-3">
         <div class="Clock_Hour" id="Clock">  </div>
+        </div>
     </div>
 
     <div class="row justify-content-center" id="weatherDisplay"></div>
@@ -39,19 +47,20 @@
 <!-- this is the time display -->
 <h1></h1>
 
-
-        <div class="row">
-            <form id="userDTEntry" class="col-sm-1">
+ 
+        <div class="row" style="margin-left: 40%;">
+            <form id="userDTEntry"class="col-sm-1">
                 <input type="datetime-local" id="alarmTime"/>
-                <button id="submitButton">
+                <button id="submitButton"  dbutton>
                     Set Alarm
                 <!-- </button> -->
-                </form>
+               
+            </form>
             <input id="cityField">
         </div>
 
         <button id="Deezer">Musica</button>
-
+  </div>
 
         <audio id="xyz" src="C:\Users\feral\development\projectSymphonia\CorrectAnswer.mp3" preload="auto"></audio>
         <audio id="abc" src="C:\Users\feral\development\projectSymphonia\Wrong02.wav" preload="auto"></audio>

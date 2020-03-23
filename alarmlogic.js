@@ -146,8 +146,11 @@ geo1();
 			var image = $("<img>").attr({
 				src : img,
 				alt : "Weather Icon",
-				width : "250px",
-				class : "weatherImage"
+				width : "350px",
+				
+				class : "weatherImage",
+				class :"color"
+			
 			});
 			$("#weatherDisplay").append(image);
 			
@@ -231,7 +234,11 @@ geo1();
 			//   console.log(RainySound)
 
 			// var OneWordClimate;
+ HEAD
+			var correctSong = $("") 
+=======
 			var correctSong = document.getElementById("xyz"); 
+>>>>>>> e25d82f22e4f5aae92785003d29cf8f2c401260a
 			correctSong.play();
 			// How do I make the song an object to i can play it with .play()
 				// if (OneWordClimate >200 || OneWordClimate <300 ) {

@@ -22,7 +22,7 @@
     <div class="row header_wrapper">
         <!-- empty -->
         <div class="col-3"></div>
-        <div class="City col-5">
+        <div class="City col-6">
             Madrid
         </div> 
         <div class="latitude"></div>
@@ -30,8 +30,11 @@
         <div class="WeatherResult"></div>
     </div>
     <!-- Clock Section -->
+    <div class="container">
     <div class="row Clock">
+        <div class="col-md-3">
         <div class="Clock_Hour" id="Clock">  </div>
+        </div>
     </div>
 
     <div class="row justify-content-center" id="weatherDisplay"></div>
@@ -39,27 +42,27 @@
 <!-- this is the time display -->
 <h1></h1>
 
-
-        <div class="row">
-            <form id="userDTEntry" class="col-sm-1">
+ 
+        <div class="row" style="margin-left: 40%;">
+            <form id="userDTEntry"class="col-sm-1">
                 <input type="datetime-local" id="alarmTime"/>
-                <button id="submitButton">
+                <button id="submitButton"  dbutton>
                     Set Alarm
                 <!-- </button> -->
-                </form>
+               
+            </form>
             <input id="cityField">
         </div>
 
-        <audio id="rainySong">
-            <source src=“alarm1.mp3”/>
-            <!-- Local MP3 -->
-            <!-- <source src="https://www.coothead.co.uk/audio/You-Cant-Always-Get-What-You-Want.mp3" type="audio/mpeg"> -->
-        </audio>
+        <button id="Deezer">Musica</button>
+  </div>
 
+        <audio id="xyz" src="C:\Users\feral\development\projectSymphonia\CorrectAnswer.mp3" preload="auto"></audio>
+        <audio id="abc" src="C:\Users\feral\development\projectSymphonia\Wrong02.wav" preload="auto"></audio>
 
 <!-- <h2></h2> -->
 
-
+       
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 

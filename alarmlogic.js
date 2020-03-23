@@ -264,16 +264,37 @@ geo1();
 
 
 function music() {
+	var settings = {
+		"async": true,
+		"crossDomain": true,
+		"url": "https://deezerdevs-deezer.p.rapidapi.com/search?q=Frank%20Sinatra",
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+			"x-rapidapi-key": "701822617fmshd86dadf857207d1p142380jsne89016f06702"
+		}
+	}
+	
+	$.ajax(settings).done(function (response) {
+		console.log(response);
+	});
 
-	var queryURL = "https://api.deezer.com/search?q=eminem";
-	console.log(queryURL)
-	$.ajax({
-		url: queryURL,
-		method: "GET"
-	}).then(function(response) {            
-	console.log(response)
-	})
+
+	var settings = {
+		"async": true,
+		"crossDomain": true,
+		"url": "https://deezerdevs-deezer.p.rapidapi.com/track/959353",
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+			"x-rapidapi-key": "701822617fmshd86dadf857207d1p142380jsne89016f06702"
+		}
+	}
+	
+	$.ajax(settings).done(function (response) {
+		console.log(response);
+	});
 }
 
-$("#Deezer").on("click", geo2)
+$("#Deezer").on("click", music)
 

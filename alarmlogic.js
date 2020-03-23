@@ -157,8 +157,65 @@ geo1();
 
 			/* Here we can call when the alarm goes on*/
 			
-			var correctSong = document.getElementById("abc"); 
-			correctSong.play();
+		
+			console.log("if Statement")
+
+			if (OneWordClimate <= 200 && OneWordClimate < 300 ) {
+				//  play song that's THUNDERSTORM related
+				var correctSong = document.getElementById("abc"); 
+				correctSong.play();
+				console.log("200p")
+                
+            }
+            else if (OneWordClimate >= 300 && OneWordClimate < 400) {
+				//  play song that's DRIZZLE related
+				var correctSong = document.getElementById("abc"); 
+				correctSong.play();
+				console.log("400p")
+            }
+            else if (OneWordClimate >= 400 && OneWordClimate < 600) {
+				//  play song that's RAIN related
+				var correctSong = document.getElementById("abc"); 
+				correctSong.play();
+				console.log("500p")
+            }
+            else if (OneWordClimate >= 600 && OneWordClimate < 700) {
+				//  play song that's SNOW related
+				var correctSong = document.getElementById("abc"); 
+				correctSong.play();
+				console.log("650p")
+            }
+            else if (OneWordClimate >= 700 && OneWordClimate < 800) {
+				//  play song that's ATMOSPHERE related
+				var correctSong = document.getElementById("abc"); 
+				correctSong.play();
+				console.log("750p")
+
+				
+            }
+            else if (OneWordClimate == 800) {
+				//  play song that's CLEAR SKY related
+				var correctSong = document.getElementById("abc"); 
+				correctSong.play();
+				console.log("800p")
+				
+            }
+            else if (OneWordClimate >= 801 && OneWordClimate < 900) {
+				//  play song that's CLOUDS related
+				var correctSong = document.getElementById("abc"); 
+				correctSong.play();
+				
+				console.log("850p")
+            }
+            else{
+
+				var correctSong = document.getElementById("xyz"); 
+				correctSong.play();
+
+				console.log("Other")
+                //  block of code to be executed if the condition is false
+            }
+
 		});
 			//this is where the audio API
 			//https://developers.soundcloud.com/docs#search
@@ -197,3 +254,19 @@ geo1();
 			// else{
 			// } */
 	}
+
+
+function music() {
+
+	var queryURL = "https://api.deezer.com/search?q=eminem";
+	console.log(queryURL)
+	$.ajax({
+		url: queryURL,
+		method: "GET"
+	}).then(function(response) {            
+	console.log(response)
+	})
+}
+
+$("#Deezer").on("click", geo2)
+

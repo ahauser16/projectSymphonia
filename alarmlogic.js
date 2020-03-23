@@ -167,7 +167,7 @@ geo1();
 			//   console.log(RainySound)
 
 			// var OneWordClimate;
-			var correctSong = document.getElementById("rainySong"); 
+			var correctSong = $("") 
 			correctSong.play();
 			// How do I make the song an object to i can play it with .play()
 				// if (OneWordClimate >200 || OneWordClimate <300 ) {

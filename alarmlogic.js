@@ -198,7 +198,7 @@ geo1();
             }
             else if (OneWordClimate == 800) {
 				//  play song that's CLEAR SKY related
-				var correctSong = document.getElementById("abc"); 
+				var correctSong = document.getElementById("xyz"); 
 				correctSong.play();
 				console.log("800p")
 				

@@ -11,14 +11,15 @@
     color: rgb(251, 203, 64);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 60px;
-   text-align: center;
+    text-align: center;
 }
 .Clock{
     color: rgb(251, 203, 64);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(34, 34, 34);
-    padding-left: 20%;
-    font-size: 150px;
+    padding-left: 30%;
+    font-size: 100px;
+    text-align: center;
     
     
 }
@@ -62,16 +63,20 @@
 }*/
 #submitButton{
    
-    margin-left: 50%;
+
+    
 } 
 form{
     text-align: center;
     
 }
 #Deezer{
-    text-align: center;
+
     background-color: salmon;
-    margin-left: 50%;
+    width: 130px;
+    margin-left: 43%; 
+    border-radius: 5px;
+    
 }
 .container{
     background-color:  rgb(197, 228, 197);
